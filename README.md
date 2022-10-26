@@ -70,6 +70,21 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 
 ### ScreenShots of Web APP
+## Desktop Mode
+![image](https://user-images.githubusercontent.com/67903748/198070226-b93afd71-38b1-427f-a029-b1367ca3d154.png)
+![image](https://user-images.githubusercontent.com/67903748/198070388-f556030d-1f9e-4ffd-901b-b24386ffab70.png)
+![image](https://user-images.githubusercontent.com/67903748/198070546-a6798b7c-100a-4c92-bdb1-b3c818051e0d.png)
+
+## Mobile Mode
+![image](https://user-images.githubusercontent.com/67903748/198070771-f1c2717f-b836-4822-b266-806d1fa491cb.png)
+![image](https://user-images.githubusercontent.com/67903748/198070841-909c69f7-3d70-4afe-8c14-ca240423c936.png)
+![image](https://user-images.githubusercontent.com/67903748/198070940-c2b2b70f-e1a9-41c5-beba-7d7dbcead95a.png)
+ after above screen if we scroll below we will see the following screen
+![image](https://user-images.githubusercontent.com/67903748/198071053-39203221-b969-4149-a726-37c2260dcf83.png)
+
+
+
+
 
 
 
