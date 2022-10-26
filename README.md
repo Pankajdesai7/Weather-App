@@ -52,6 +52,11 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 
 ### Component Structure
+![image](https://user-images.githubusercontent.com/67903748/198067921-e25b5b3b-66e8-459c-b059-5385072447cb.png)
+
+![image](https://user-images.githubusercontent.com/67903748/198068430-7276faa1-ed32-4684-af94-1f08f0d4da1a.png)
+
+![image](https://user-images.githubusercontent.com/67903748/198067774-1e616e52-aadb-4812-8cd9-1fdf8804b12c.png)
 
 ![image](https://user-images.githubusercontent.com/67903748/198066073-3ccaf989-c3f2-4b18-acbf-5d992c49f102.png)
 
