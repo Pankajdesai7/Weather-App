@@ -1,0 +1,87 @@
+
+.App {
+  height: 100vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-container{
+  width: 55%;
+  height: 80%;
+  background-color: #bfe0db;
+}
+
+.header-component {
+  height: 13%;
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.search-component{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.search-field{
+  height: 28px;
+  margin-right: 15px;
+  text-align:center;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+.add-city-btn{
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #229cb8;
+  color: white;
+}
+.list-header {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    .seqNumber{
+      width: 10%;
+      text-align-last: center;
+    }
+ }
+.list-container{
+  height: 80%;
+  padding: 10px 30px;
+}
+
+.city-list {
+  height: 100%;
+  overflow: scroll;
+}
+
+.city-list-empty{
+  
+  padding: 30px;
+  font-size: 30px;
+}
+
+.city-list::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 599px) {
+
+  .weather-container{
+     width: 100%;
+    }
+} 
+
+
+

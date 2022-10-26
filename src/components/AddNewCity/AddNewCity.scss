@@ -1,0 +1,95 @@
+.modal-background {
+    width: 100vw;
+    height: 100vh;
+    background-color: #bfe0db;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  .modal-container {
+    width: 35%;
+    height: 35%;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .title-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .titleCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+  .input-city-field{
+      
+      width: 250px;
+      height: 40px;
+      border-radius: 20px;
+      background-color:#c9dfdb ;
+      outline: none;
+      border: none;
+      text-align-last: center;
+  }
+  
+  
+  .body {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  
+  .save-btn{
+     margin-top: 40px;
+     margin-left: 20px;
+     width: 80px;
+     height: 40px;
+     border-radius: 20px;
+     color:white;
+     font-weight: 900;
+     background-color: #229cb8;
+     border: none;
+  }
+
+  .bottom-close-btn{
+    margin-top: 40px;
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: 900;
+    color: #229cb8;
+    background-color: white;
+    border: 1px solid #229cb8;
+  }
+   .error-msg{
+     font-size: 15px;
+     color:red;
+   }
+  .closeBtn{
+    background: none;
+    border: none;
+    color: rgb(248, 205, 205);
+ }
+
+
+ @media (max-width: 599px) {
+
+  .modal-container{
+     width: 80%;
+     height: 40%;
+    }
+} 

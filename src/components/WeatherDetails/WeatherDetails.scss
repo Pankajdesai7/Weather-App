@@ -1,0 +1,98 @@
+.weather-modal-background {
+    width: 100vw;
+    height: 100vh;
+    background-color: #bfe0db;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  .weather-modal-container {
+    width: 60%;
+    height: 80%;
+    background-color: #229cb8;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+
+    .left-panel{
+        width: 65%;
+        height: 100%;
+
+        .todays-weather-details{
+          height: 5%;
+          padding: 15px;
+
+          span{
+            padding: 10px 10px;
+          }
+        }
+
+    }
+    .right-panel{
+        width: 35%;
+        height: 100%;
+        background-color: #34a6c0;
+
+        .location-container{
+           display: flex;
+           flex-direction: row;
+           height: 15%;
+           justify-content: space-between;
+           padding: 20px;
+            
+           .location{
+            padding-top: 5px;
+           }
+           .close-weather-details-btn{
+            background: #7bd5e9;
+            height: 25px;
+            width: 25px;
+            border: none;
+            border-radius: 50%;
+            color:white
+           }
+           
+        }
+    }
+
+  }
+
+  .horizontal-line{
+    margin: auto;
+    opacity: 0.4;
+    width: 80%;
+    border: 1px solid white;
+  }
+
+  @media (max-width: 599px) {
+
+    .weather-modal-container{
+      width: 100%;
+      height: 100%;
+      display: block;
+      overflow: scroll;
+      
+      .left-panel{
+        width: 100%;
+        height: 700px;
+
+      }
+      .right-panel{
+        width: 100%;
+        height:700px;
+      }
+    } 
+  } 
+
+  @media (max-width: 900px)
+  {
+    .weather-modal-container{
+      width: 100%;
+    } 
+  }
+
+  

@@ -1,0 +1,53 @@
+
+.weather-info-container{
+   height: 40%;
+
+   .humidity-rain-container{
+     height: 40%;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     margin-top: 20px;
+
+     .humidity{
+        width: 50%;
+        text-align: center;
+
+        span{
+            font-weight: 900;
+        }
+     }
+     .rain-chances{
+         width: 50%;
+         text-align: center;
+         span{
+            font-weight: 900;
+        }
+     }
+   }
+
+   .airquality-wind-container{
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+
+    .air-quality{
+        width: 50%;
+        text-align: center;
+        span{
+            font-weight: 900;
+        }
+     }
+     .wind{
+         width: 50%;
+         text-align: center;
+         span{
+            font-weight: 900;
+        }
+     }
+   }
+
+}
+
