@@ -61,5 +61,16 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ![image](https://user-images.githubusercontent.com/67903748/198066073-3ccaf989-c3f2-4b18-acbf-5d992c49f102.png)
 
 
+### Functionalities 
+
+1.  Adding City 
+2.  Searching On List
+3.  Deleting List Item
+4.  When Clicked On ListItem Particular City's Weather Details Are Shown
+
+
+### ScreenShots of Web APP
+
+
 
      
