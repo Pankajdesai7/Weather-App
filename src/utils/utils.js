@@ -79,6 +79,12 @@ export const celciusToFerhenit = ( temp ) => {
 export const chancesOfRain = (pop) => {
     return (pop*100).toFixed(2);
 }
+
+export const qualityOfAir = ( index ) => {
+    const qualities = [ 'Good' , 'Fair' , 'Moderate' , 'Poor' , 'Very Poor']
+    return qualities[index-1]
+
+}
 export const regionNames = new Intl.DisplayNames(
     ['en'], {type: 'region'}
   )

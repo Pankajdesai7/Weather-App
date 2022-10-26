@@ -15,7 +15,14 @@ function App() {
   const [ weatherOfCity , setWeatherOfCity] =useState("");
 
   const addCity = ( city ) => {
-   
+
+    for(let i=0;i<cityList?.length;i++)
+    {
+       if(cityList[i]?.name===city)
+       {
+          return 
+       }
+    }
     let temp = {
       name:city,
       id:uuidv4()

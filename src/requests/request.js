@@ -1,14 +1,20 @@
-import axios from 'axios'
-
-
 const API_KEY = '01e040aa6a086402fc71b6d7f5983cdb'
 const baseUrl = 'http://api.openweathermap.org/data/2.5/forecast'
 
-export const fetchWeatherDetails = async( city ) => {
+export const weatherUrl = ( city ) => {
+    let url=`${baseUrl}?q=${city}&cnt=6&appid=${API_KEY}&units=metric`
+    return url;
+}
 
-    let url=`${baseUrl}?q=${city}&cnt=1&appid=${API_KEY}`
+export const checkCityValidUrl = ( city ) => {
 
-    const { data } = await axios.get(url)
-    console.log(data)
-    return data  
+    let url = `${baseUrl}?q=${city}&cnt=1&appid=${API_KEY}`
+    return url;
+}
+
+export const airQualityUrl = ( lat , lon ) => {
+
+    console.log(lat,lon)
+    let url = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${API_KEY}`
+    return url;
 }

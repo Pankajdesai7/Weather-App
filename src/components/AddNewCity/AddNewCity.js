@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import "./AddNewCity.scss"
 import { FaTimesCircle } from 'react-icons/fa'
 import axios from "axios";
+import { checkCityValidUrl } from "../../requests/request";
 
 function AddNewCity({ setOpenModal ,addCity }) {
 
@@ -10,7 +11,6 @@ function AddNewCity({ setOpenModal ,addCity }) {
 
   const handleChange = (event) => {
     setCity(event.target.value)
-    console.log(city)
   }
 
   const handleSubmit = (e) => {
@@ -21,8 +21,7 @@ function AddNewCity({ setOpenModal ,addCity }) {
         setInvalidCity(true);
     }
     else{
-        const url=`http://api.openweathermap.org/data/2.5/forecast?q=${city}&cnt=1&appid=01e040aa6a086402fc71b6d7f5983cdb`
-        axios.get(url).then( res => {
+        axios.get(checkCityValidUrl(city)).then( res => {
             if( res.data.city.name.toLowerCase() === city.toLowerCase())
             {
                 setInvalidCity(false)
@@ -31,9 +30,12 @@ function AddNewCity({ setOpenModal ,addCity }) {
             }
             else setInvalidCity(true)
             setCity("");
-        }).catch( () => {
-            setInvalidCity(true)
-            setCity("")
+        }).catch( ( error ) => {
+            if(error.response.status === 404)
+            {
+              setInvalidCity(true)
+              setCity("")
+            } 
         })
     } 
   }

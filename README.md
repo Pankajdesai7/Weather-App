@@ -39,16 +39,16 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 
 ### List Of Components 
-#1.App 
-#2.ListItem
-#3.AddNewCity
-#4.WeatherDetails
-#5.TodaysTemperature
-#6.DateAndTime 
-#7.UpcomingForecast
-#8.Weather
-#9.Clock
-#10.SunriseSunset
+1. App 
+2. ListItem
+3. AddNewCity
+4. WeatherDetails
+5. TodaysTemperature
+6. DateAndTime 
+7. UpcomingForecast
+8. Weather
+9. Clock
+10. SunriseSunset
 
 
 ### Component Structure
