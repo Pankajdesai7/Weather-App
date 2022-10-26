@@ -13,8 +13,6 @@ export const checkCityValidUrl = ( city ) => {
 }
 
 export const airQualityUrl = ( lat , lon ) => {
-
-    console.log(lat,lon)
     let url = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${API_KEY}`
     return url;
 }

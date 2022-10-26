@@ -20,7 +20,6 @@ const Weather = ({ humidity, rainChances, wind, lat, lon }) => {
   }
 
   useEffect(() => {
-    console.log("called this shit component")
     fetchAirQualityDetails(lat, lon)
   }, [lat, lon])
 

@@ -14,32 +14,35 @@ import "./WeatherDetails.scss"
 const WeatherDetails = ( { city , closeModal } ) => {
 
     const [weatherDetails, setWeatherDetails] = useState()
-
     const [ isMetricCelcius , setIsMetricCelcius] = useState(true)
+    const [ apiCallFailed , setApiCallFailed] = useState(false)
 
 
     const fetchWeatherDetails = ( city ) => {
         axios.get(weatherUrl(city)).then( res => {
             setWeatherDetails(res.data)
+        }).catch( () =>{
+           setApiCallFailed(true)
         })
-
     }
 
     useEffect( () => {
         fetchWeatherDetails(city)
     },[])
 
-    console.log(weatherDetails)
-
     return(
         <div className="weather-modal-background">
             <div className="weather-modal-container">
                 <div className="left-panel">
-                    <TodaysTemperature
+                    { apiCallFailed ? <> Server Error Try Again Later</> :
+                     (
+                     <TodaysTemperature
                      temperature={weatherDetails?.list[0]?.main?.temp}
                      iconCode={weatherDetails?.list[0]?.weather[0]?.icon}
                      setIsMetricCelcius={setIsMetricCelcius}
                     />
+                     )
+                    }
                     <DateAndTime/>
                     <div className="todays-weather-details">
                         <div>
@@ -70,20 +73,24 @@ const WeatherDetails = ( { city , closeModal } ) => {
                            </button>
                        </div>
                     </div>
-                    <SunriseSunset
-                     sunriseTime={weatherDetails?.city?.sunrise}
-                     sunsetTime={weatherDetails?.city?.sunset}
-                    />
+                    { apiCallFailed ? <> Server Error Try Again Later</> :
+                       <SunriseSunset
+                       sunriseTime={weatherDetails?.city?.sunrise}
+                       sunsetTime={weatherDetails?.city?.sunset}
+                      />
+                    }
                     <div>
                      <div className="horizontal-line"> </div>
                     </div>
-                    <Weather
-                     humidity={weatherDetails?.list[0]?.main?.humidity}
-                     rainChances={weatherDetails?.list[0]?.pop}
-                     wind={weatherDetails?.list[0].wind.speed}
-                     lat={weatherDetails?.city?.coord?.lat}
-                     lon={weatherDetails?.city?.coord?.lon}
-                    />
+                    { apiCallFailed ? <>Server Error Try Again Later</> : 
+                      <Weather
+                      humidity={weatherDetails?.list[0]?.main?.humidity}
+                      rainChances={weatherDetails?.list[0]?.pop}
+                      wind={weatherDetails?.list[0].wind.speed}
+                      lat={weatherDetails?.city?.coord?.lat}
+                      lon={weatherDetails?.city?.coord?.lon}
+                     />
+                    }
                 </div>
             </div>
         </div>

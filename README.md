@@ -34,12 +34,13 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### Api used for weather details
 
-1. Used Openweather Api to weather deatils `http://api.openweathermap.org/data/2.5/forecast`
+1. Used Openweather Api to fetch weather deatils `http://api.openweathermap.org/data/2.5/forecast`
 2. Used same OpenWeather Api to check City Entered is valid or not .
+3. For Weather icons also used OpenWeather 
 
 
 ### List Of Components 
-1. App 
+1. App
 2. ListItem
 3. AddNewCity
 4. WeatherDetails

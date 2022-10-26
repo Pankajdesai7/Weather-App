@@ -24,7 +24,7 @@ const TodaysTemperature = ({ temperature , iconCode , setIsMetricCelcius }) => {
         <div className="temperature-container">
            <div className="img-cont">
             <img src={`https://openweathermap.org/img/wn/${iconCode}@2x.png`}
-            alt="70"
+            alt="icon"
             />
             <div className="temp-toggle-container">
                <div className="toggle" onClick={handleToggle}>

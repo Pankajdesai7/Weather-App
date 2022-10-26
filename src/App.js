@@ -47,7 +47,6 @@ function App() {
 
   const handleChange = (e) => {
     setSearchText(e.target.value)
-    console.log(e.target.value)
   }
 
   return (
