@@ -38,13 +38,24 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 2. Used same OpenWeather Api to check City Entered is valid or not .
 
 
-### Folder Structure 
+### List Of Components 
 
-src
-  components
-    component
-        component.js
-        component.scss
-  utils
-    utils.js
+1.App 
+2.ListItem
+3.AddNewCity
+4.WeatherDetails
+5.TodaysTemperature
+6.DateAndTime 
+7.UpcomingForecast
+8.Weather
+9.Clock
+10.SunriseSunset
+
+
+### Component Structure
+
+![image](https://user-images.githubusercontent.com/67903748/198066073-3ccaf989-c3f2-4b18-acbf-5d992c49f102.png)
+
+
+
      
